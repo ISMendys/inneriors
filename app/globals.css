@@ -74,3 +74,62 @@
     @apply bg-background text-foreground;
   }
 }
+.cta {
+  border: none;
+  background: none;
+  margin-left: 10px;
+  margin-top: 100px;
+}
+
+.cta span {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 7px;
+  letter-spacing: 4px;
+  margin-left: 4px;
+  font-size: 14px;
+  padding-right: 15px;
+  text-transform: uppercase;
+}
+
+.cta svg {
+  transform: translateX(-15px);
+  transition: all 0.3s ease;
+  margin-left: 220px; /* Ajuste este valor para mover a seta mais para a direita */
+  margin-top: -27px; /* Ajuste este valor para mover a seta mais para cima */
+
+}
+
+.cta:hover svg {
+  transform: translateX(0);
+}
+
+.cta:active svg {
+  transform: scale(0.9);
+}
+
+.hover-underline-animation {
+  position: relative;
+  color: #ffffff;
+  padding-bottom: 20px;
+  display: inline-block;
+}
+
+.hover-underline-animation:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #ffffff;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.cta:hover .hover-underline-animation:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
