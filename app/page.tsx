@@ -10,7 +10,7 @@ export default function Home() {
           <div className="absolute top-1/2 left-0 ml-20 transform -translate-y-1/2 text-left">
             <h2 className="text-lg mb-2 text-beige-500">Bem-vindo a</h2>
             <h1 className="text-7xl mb-4 text-white">INNERIORS</h1>
-            <p className="mb-4 text-gray-300 max-w-md mx-auto">Aqui vai um pequeno parágrafo sobre a INNERIORS falando um monte de groselia que começou no ano de 2021, pura besteira mesmo somente para fins de teste.</p>
+            <p className="mb-4 text-gray-300 max-w-md mx-auto">Aqui jas um pequeno parágrafo sobre a INNERIORS falando um monte de groselia que começou no ano de 2021, pura besteira mesmo somente para fins de teste.</p>
             <button className="cta">
               <span className="hover-underline-animation"> Entre em contato </span>
               <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#ffffff" className="bi bi-arrow-right"
